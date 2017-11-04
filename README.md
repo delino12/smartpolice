@@ -14,6 +14,7 @@ Application for law enforcement and citizens protections...
   # stage 1
   Justice will notify us on the whatsapp, please make sure you respond.
   
+  please let make sure we get our application setup and running....
   
   
   
