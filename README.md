@@ -1,6 +1,11 @@
 # smartpolice
 Application for law enforcement and citizens protections...
 
+
+# Mobile Wep Application URL
+
+  - https://smart-police.herokuapp.com/ 
+
 # Goal
 -> User verification (verify/comment)
 -> Crime Scene
@@ -15,6 +20,4 @@ Application for law enforcement and citizens protections...
   Justice will notify us on the whatsapp, please make sure you respond.
   
   please let make sure we get our application setup and running....
-  
-  
   
