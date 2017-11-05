@@ -12,7 +12,7 @@
 	<div class="container" align="center">
 		<div class="row">
 			<div class="col-md-6">
-				<p>Smart Police Projects</p>
+				<p class="lead">Smart Police Projects</p>
 			</div>
 		</div>
 	</div>
