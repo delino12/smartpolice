@@ -24,14 +24,12 @@
 
           <div class="form-group">
             <input class="form-control" placeholder="email" id="email"/>
-          <div>
+          </div>
 
           <div class="form-group">
             <button class="btn btn-primary" onclick="emailLogin();">Login via Email</button>
           </div>
-          
-    		</div>
     	</div>
-
+    </div>
   </div> <!-- /container -->
 <?php include ('includes/foot-section.php'); ?>
