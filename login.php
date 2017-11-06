@@ -46,7 +46,7 @@
           {
             appId:363224617437206, 
             state:"smartpolicetoken", 
-            version:"v2.10",
+            version:"v1.0",
             fbAppEventsEnabled:true,
             redirect:"https://smart-police.herokuapp.com/"
           }

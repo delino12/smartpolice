@@ -3,8 +3,8 @@
 <?php
 // Initialize variables
 $app_id = 363224617437206;
-$secret = '01c839d365efafe6c1949c7863b1d086';
-$version = 'v2.10'; // 'v1.1' for example
+$secret = 'e476304da417fc7f9333efc92e436a7f';
+$version = 'v1.0'; // 'v1.1' for example
 
 // Method to send Get request to url
 function doCurl($url) {
