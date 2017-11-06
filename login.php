@@ -6,7 +6,7 @@
     <!-- Main component for a primary message or call to action -->
     	<div class="row">
     		<div class="col-md-4 col-md-offset-2">
-          <form id="login_success" method="post" action="/login_success.php">
+          <!-- <form id="login_success" method="post" action="/login_success.php"> -->
             <input id="csrf" type="hidden" name="csrf" />
             <input id="code" type="hidden" name="code" />
             <div class="form-group">
@@ -32,7 +32,7 @@
             <div class="form-group">
               <button class="btn btn-primary" onclick="emailLogin();">Login via Email</button>
             </div>
-          </form>
+          <!-- </form> -->
     	</divs>
     </div>
   </div> <!-- /container -->
@@ -59,6 +59,7 @@
           var code = response.code;
           var csrf = response.state;
           // Send code to server to exchange for access token
+          console.log(code);
         }
         else if (response.status === "NOT_AUTHENTICATED") {
           // handle authentication failure
