@@ -44,11 +44,11 @@
       AccountKit_OnInteractive = function(){
         AccountKit.init(
           {
-            appId:363224617437206, 
+            appId:'363224617437206', 
             state:"smartpolicetoken", 
             version:"v1.0",
             fbAppEventsEnabled:true,
-            redirect:"https://smart-police.herokuapp.com/"
+            redirect:"https://smart-police.herokuapp.com/login.php"
           }
         );
       };
