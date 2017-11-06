@@ -2,7 +2,7 @@
 
 <?php
 // Initialize variables
-$app_id = '363224617437206';
+$app_id = 363224617437206;
 $secret = '01c839d365efafe6c1949c7863b1d086';
 $version = 'v2.10'; // 'v1.1' for example
 
