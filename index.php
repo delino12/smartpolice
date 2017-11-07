@@ -4,6 +4,7 @@
 
 
 <script>
+	// init the sdk
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '363224617437206',
@@ -28,34 +29,61 @@
    }(document, 'script', 'facebook-jssdk'));
 
 
-  // check status change call back
-  function statusChangeCallback(response)
-  {
-    if(response.status === 'connected'){
-      console.log('login');
-    }else{
-      console.log('not logged in !');
-    }
-  }
+	// check status change call back
+	function statusChangeCallback(response){
 
-  
-  function checkLoginState() {
-    FB.getLoginStatus(function(response) {
-      statusChangeCallback(response);
-    });
+	    if(response.status === 'connected'){
+	    	setElements(true);
+	      	console.log('login');
+	    }else{
+	    	setElements(false);
+	      	console.log('not logged in !');
+	    }
+	}
+
+  	// check user logged in status
+  	function checkLoginState() {
+	    FB.getLoginStatus(function(response) {
+	      statusChangeCallback(response);
+	    });
+  	}
+
+  // do login check on page
+
+  function setElements(isLoggedIn)
+  {
+  	if(isLoggedIn){
+  		document.getElementById("dashboard").style.display = 'block';
+		document.getElementById("welcome-div").style.display = 'none';
+  		document.getElementById("fb-btn").style.display = 'none';
+  		document.getElementById("logout").style.display = 'block';
+
+  	}else{
+  		document.getElementById("dashboard").style.display = 'none';
+		document.getElementById("welcome-div").style.display = 'block';
+  		document.getElementById("fb-btn").style.display = 'block';
+  		document.getElementById("logout").style.display = 'none';
+  	}
   }
 </script>
   <div class="container">
     <!-- Main component for a primary message or call to action -->
     	<div class="row">
     		<div class="col-md-4 col-md-offset-2">
-    			<h1 class="lead">Welcome to Smart Police Rescue</h1>
-    			<ul class="list-group">
-    				<li class="list-group-item">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
-    				<li class="list-group-item">Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
-    				<li class="list-group-item">Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
-    				<li class="list-group-item">Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</li>
-    			</ul>
+    			<div id="dashboard">
+    				
+    			</div>
+
+    			<div id="welcome-div">
+    				<h1 class="lead">Welcome to Smart Police Rescue</h1>
+	    			<ul class="list-group">
+	    				<li class="list-group-item">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
+	    				<li class="list-group-item">Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
+	    				<li class="list-group-item">Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
+	    				<li class="list-group-item">Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</li>
+	    			</ul>
+    			</div>
+    			
         	</div>
     	</div>
     </div>

@@ -17,10 +17,12 @@
       
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">
-          <fb:login-button 
+          <fb:login-button id="fb-btn"
             scope="public_profile,email"
             onlogin="checkLoginState();">
           </fb:login-button> Signup or Login via Facebook</a></li>
+
+          <li><a href="#" onclick="logoutUser()" id="logout">Logout</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
