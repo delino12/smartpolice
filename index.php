@@ -48,6 +48,14 @@
 	    });
   	}
 
+  	// do logout
+  	function logoutUser()
+  	{
+  		FB.logout(function (response){
+  			setElements(false);
+  		});
+  	}
+
   // do login check on page
 
   function setElements(isLoggedIn)
