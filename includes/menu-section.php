@@ -20,7 +20,7 @@
           <fb:login-button 
             scope="public_profile,email"
             onlogin="checkLoginState();">
-          </fb:login-button> Signup or Login via Facebook</a></li>
+          </fb:login-button> or Signup via Facebook</a></li>
 
           <li><a href="#" onclick="logoutUser()" id="logout">Logout</a></li>
       </ul>
