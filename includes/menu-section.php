@@ -11,10 +11,16 @@
       <a class="navbar-brand" href="#">Smart Police</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-left">
         <li><a href="/">Home</a></li>
-        <li><a href="register.php">Sign Up</a></li>
-        <li><a href="login.php">Log in</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">
+          <fb:login-button 
+            scope="public_profile,email"
+            onlogin="checkLoginState();">
+          </fb:login-button> Signup or Login via Facebook</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
