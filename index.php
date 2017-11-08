@@ -118,9 +118,14 @@
 <div id="dashboard">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-6">
 				<h1 class="lead">Welcome to Smart Police </h1>
 				<button id="stop" class="btn btn-warning">Stop</button> <button id="start" class="btn btn-warning">Start</button>
+			</div>
+			<div class="col-md-6">
+				<video id="video" width="640" height="480" autoplay></video>
+				<button id="snap">Pluck Chrime</button>
+				<canvas id="canvas" width="640" height="480"></canvas>
 			</div>
 		</div>
 	</div>
