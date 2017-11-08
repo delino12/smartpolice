@@ -62,38 +62,54 @@
   {
   	if(isLoggedIn){
   		document.getElementById("dashboard").style.display = 'block';
-		  document.getElementById("welcome-div").style.display = 'none';
+		document.getElementById("welcome-div").style.display = 'none';
   		document.getElementById("fb-btn").style.display = 'none';
   		document.getElementById("logout").style.display = 'block';
 
 
-      // if only users is logged in
-      // Grab elements, create settings, etc.
-      var video = document.getElementById('video');
+      $("#start").click(function (){
+      	startSnip(true);
+      });
 
-      // Get access to the camera!
-      if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-          // Not adding `{ audio: true }` since we only want video now
-          navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
-              video.src = window.URL.createObjectURL(stream);
-              video.play();
-          });
+
+      $("#stop").click(function (){
+      	startSnip(true);
+      });
+
+      function startSnip(data){
+      	if(data){
+      		// if only users is logged in
+		    // Grab elements, create settings, etc.
+		    var video = document.getElementById('video');
+
+		      // Get access to the camera!
+		      if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+		          // Not adding `{ audio: true }` since we only want video now
+		          navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+		              video.src = window.URL.createObjectURL(stream);
+		              video.play();
+		          });
+		      }
+
+		      // Elements for taking the snapshot
+		      var canvas = document.getElementById('canvas');
+		      var context = canvas.getContext('2d');
+		      var video = document.getElementById('video');
+
+		      // Trigger photo take
+		      document.getElementById("snap").addEventListener("click", function() {
+		        context.drawImage(video, 0, 0, 640, 480);
+		      });
+      	}else{
+
+      	}
       }
 
-      // Elements for taking the snapshot
-      var canvas = document.getElementById('canvas');
-      var context = canvas.getContext('2d');
-      var video = document.getElementById('video');
-
-      // Trigger photo take
-      document.getElementById("snap").addEventListener("click", function() {
-        context.drawImage(video, 0, 0, 640, 480);
-      });
 
 
   	}else{
   		document.getElementById("dashboard").style.display = 'none';
-		  document.getElementById("welcome-div").style.display = 'block';
+		document.getElementById("welcome-div").style.display = 'block';
   		document.getElementById("fb-btn").style.display = 'block';
   		document.getElementById("logout").style.display = 'none';
   	}
@@ -101,6 +117,7 @@
 </script>
 <div id="dashboard">
 	<h1>Welcome to Smart Police </h1>
+	<button id="stop" class="btn btn-warning">Stop</button> <button id="start" class="btn btn-warning">Start</button>
 </div>
 <div id="welcome-div">
 	<div style="display: table;width: 100%;height: 50%;" >
