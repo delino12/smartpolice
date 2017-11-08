@@ -116,8 +116,15 @@
   }
 </script>
 <div id="dashboard">
-	<h1>Welcome to Smart Police </h1>
-	<button id="stop" class="btn btn-warning">Stop</button> <button id="start" class="btn btn-warning">Start</button>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="lead">Welcome to Smart Police </h1>
+				<button id="stop" class="btn btn-warning">Stop</button> <button id="start" class="btn btn-warning">Start</button>
+			</div>
+		</div>
+	</div>
+	
 </div>
 <div id="welcome-div">
 	<div style="display: table;width: 100%;height: 50%;" >
