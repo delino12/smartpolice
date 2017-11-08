@@ -99,28 +99,36 @@
   	}
   }
 </script>
-<div style="display: table;width: 100%;height: 50%;" >
-	<div style="vertical-align: middle;display: table-cell;text-align: center;background: rgba(0,0,0,0.15);padding:5em 2em; margin: 5em 3em 0em 2em;">
-        <div class="col-sm-12 col-md-4 col-md-offset-4" style="display: inline-block;text-align: left;padding: ;border: ">
-            <h1 class="text-center login-title" style="font-weight: bolder; color: #C24F55;font-size: 2em;">Smart Police</h1>
-            <div class="account-wall">
-                <div style="text-align: center;">
-                	<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button> 
-                            Signup with Facebook
-                </div>
-                <div style="font-weight: bold;font-size: 1.5em; text-align: center;">OR</div>
-                <div style="text-align: center;font-weight: bolder;margin-bottom: 3px;">sign up with email</div>
-                    <form action="" method="post" class="form-signin" >
-	                <input type="email" class="form-control" placeholder="Email" name="mail2" required autofocus>
-	                <input type="password" class="form-control" placeholder="Password" name="pwrd2" required>
-	                <button class="btn btn-lg btn-primary btn-block" type="submit">Create Account</button>
-	                <br />
-	                Already signup ? <a href="#" class=""> Sign in </a><span class="clearfix"></span>
-                	<a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
-                </form>
-            </div>
-            <a href="#" class="text-center new-account">Contact us </a>
-        </div>
-    </div>
+<div id="dashboard">
+	<h1>Welcome to Smart Police </h1>
+</div>
+<div id="welcome-div">
+	<div style="display: table;width: 100%;height: 50%;" >
+		<div style="vertical-align: middle;display: table-cell;text-align: center;background: rgba(0,0,0,0.15);padding:5em 2em; margin: 5em 3em 0em 2em;">
+	        <div class="col-sm-12 col-md-4 col-md-offset-4" style="display: inline-block;text-align: left;padding: ;border: ">
+	            <h1 class="text-center login-title" style="font-weight: bolder; color: #C24F55;font-size: 2em;">Smart Police</h1>
+	            <div class="account-wall">
+	                <div style="text-align: center;">
+	                	<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button> 
+	                            Signup with Facebook
+	                </div>
+	                <div style="font-weight: bold;font-size: 1.5em; text-align: center;">OR</div>
+	                <div style="text-align: center;font-weight: bolder;margin-bottom: 3px;">sign up with email</div>
+	                    <form action="" method="post" class="form-signin" >
+		                <input type="email" class="form-control" placeholder="Email" name="mail2" required autofocus>
+		                <input type="password" class="form-control" placeholder="Password" name="pwrd2" required>
+		                <button class="btn btn-lg btn-primary btn-block" type="submit">Create Account</button>
+		                <br />
+		                Already signup ? <a href="#" class=""> Sign in </a><span class="clearfix"></span>
+	                	<a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
+	                </form>
+	            </div>
+	            <a href="#" class="text-center new-account">Contact us </a>
+	        </div>
+	    </div>
+	</div>
 </div>
 <?php include ('includes/foot-section.php'); ?>
+
+
+
