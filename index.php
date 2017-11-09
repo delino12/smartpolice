@@ -101,7 +101,18 @@
 		        context.drawImage(video, 0, 0, 640, 480);
 		      });
       	}else{
+      		// if only users is logged in
+		    // Grab elements, create settings, etc.
+		    var video = document.getElementById('video');
 
+		      // Get access to the camera!
+		      if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+		          // Not adding `{ audio: true }` since we only want video now
+		          navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+		              video.src = window.URL.createObjectURL(stream);
+		              video.stop();
+		          });
+		      }
       	}
       }
 
@@ -114,6 +125,22 @@
   		document.getElementById("logout").style.display = 'none';
   	}
   }
+</script>
+
+<script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCTNiNQw6x5sCq4A9rLB2IJwZrArUIW-OY",
+    authDomain: "smartpolice-96c79.firebaseapp.com",
+    databaseURL: "https://smartpolice-96c79.firebaseio.com",
+    projectId: "smartpolice-96c79",
+    storageBucket: "smartpolice-96c79.appspot.com",
+    messagingSenderId: "832454313927"
+  };
+  firebase.initializeApp(config);
 </script>
 <div id="dashboard">
 	<div class="container">
