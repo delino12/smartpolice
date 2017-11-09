@@ -52,10 +52,13 @@
 
   	// test api
   	function testApi(){
-  		FB.api('/me?fields=name,email', function(response){
+  		FB.api('/me?fields=name,email,location,birthday,gender', function(response){
   			if(response && !response.error){
   				$(".name").text(response.name);
   				$(".email").text(response.email);
+  				$(".gender").text(response.gender);
+  				$(".birthday").text(response.birthday);
+  				$(".location").text(response.location);
   				console.log(response);
   			}
   		});
@@ -171,12 +174,40 @@
 						<span class="name"></span>
 					</div>
 				</div>
+				<br />
 				<div class="row">
 					<div class="col-sm-2">
 						<b>Email </b>
 					</div>
 					<div class="col-sm-6">
 						<span class="email"></span>
+					</div>
+				</div>
+				<br />
+				<div class="row">
+					<div class="col-sm-2">
+						<b>Gender </b>
+					</div>
+					<div class="col-sm-6">
+						<span class="email"></span>
+					</div>
+				</div>
+				<br />
+				<div class="row">
+					<div class="col-sm-2">
+						<b>Birthday </b>
+					</div>
+					<div class="col-sm-6">
+						<span class="birthday"></span>
+					</div>
+				</div>
+				<br />
+				<div class="row">
+					<div class="col-sm-2">
+						<b>Location </b>
+					</div>
+					<div class="col-sm-6">
+						<span class="location"></span>
 					</div>
 				</div>
 			</div>
