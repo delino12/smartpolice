@@ -36,7 +36,7 @@
 	      	testApi();
 	    }else{
 	    	setElements(false);
-	      	console.log('not logged in !');
+	      	console.log('logout');
 	    }
 
 	    // console.log(response);
@@ -52,9 +52,9 @@
 
   	// test api
   	function testApi(){
-  		FB.api('/me?fields=name,email', function (response){
+  		FB.api('/me?fields=name,email', function(response){
   			if(response && !response.error){
-  				console.log();
+  				console.log(response);
   			}
   		});
   	}
