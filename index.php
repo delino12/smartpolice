@@ -55,7 +55,7 @@
   		FB.api('/me?fields=name,email', function(response){
   			if(response && !response.error){
   				$(".name").text(response.name);
-  				$(".email").text(response.name);
+  				$(".email").text(response.email);
   				console.log(response);
   			}
   		});
@@ -164,18 +164,18 @@
 				<h1 class="lead">Welcome to Smart Police </h1>
 				<!-- <button id="stop" class="btn btn-warning">Stop</button> <button id="start" class="btn btn-warning">Start</button> -->
 				<div class="row">
-					<div class="col-sm-1">
-						Name 
+					<div class="col-sm-2">
+						<b>Name </b>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-sm-6">
 						<span class="name"></span>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-1">
-						Email 
+					<div class="col-sm-2">
+						<b>Email </b>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-sm-6">
 						<span class="email"></span>
 					</div>
 				</div>
