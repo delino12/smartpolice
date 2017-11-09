@@ -21,7 +21,7 @@
                         or Signup via Facebook
                     </a>
                 </li>
-                <li><span class="email"></span></li>
+                <li><a href="#"><span class="email"></span></a></li>
                 <li><a href="#" onclick="logoutUser()" id="logout">Logout</a></li>
             </ul>
         </div>
