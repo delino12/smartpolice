@@ -150,7 +150,7 @@
 			<div class="col-md-6">
 				<h1 class="lead">Welcome to Smart Police </h1>
 				<!-- <button id="stop" class="btn btn-warning">Stop</button> <button id="start" class="btn btn-warning">Start</button> -->
-				<table class="table">
+				<table class="table" style="color:#FFF;">
 					<tbody>
 						<tr>
 							<td>Name</td>
