@@ -37,6 +37,8 @@
 	    	setElements(false);
 	      	console.log('not logged in !');
 	    }
+
+	    console.log(response);
 	}
 
   	// check user logged in status
@@ -147,11 +149,39 @@
 		<div class="row">
 			<div class="col-md-6">
 				<h1 class="lead">Welcome to Smart Police </h1>
-				<button id="stop" class="btn btn-warning">Stop</button> <button id="start" class="btn btn-warning">Start</button>
+				<!-- <button id="stop" class="btn btn-warning">Stop</button> <button id="start" class="btn btn-warning">Start</button> -->
+				<table class="table">
+					<tbody>
+						<tr>
+							<td>Name</td>
+							<td><span class="name"></span></td>
+						</tr>
+						<tr>
+							<td>Email</td>
+							<td><span class="email"></span></td>
+						</tr>
+						<tr>
+							<td>Location</td>
+							<td><span class="location"></span></td>
+						</tr>
+						<tr>
+							<td>Addesss</td>
+							<td>textarea</td>
+						</tr>
+						<tr>
+							<td>Phone</td>
+							<td>input</td>
+						</tr>
+						<tr>
+							<td>Rescue relative</td>
+							<td>input</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 			<div class="col-md-6">
 				<video id="video" width="640" height="480" autoplay></video>
-				<button id="snap">Pluck Chrime</button>
+				<button id="snap">Cover a Crime</button>
 				<canvas id="canvas" width="640" height="480"></canvas>
 			</div>
 		</div>
@@ -165,7 +195,7 @@
 	            <h1 class="text-center login-title" style="font-weight: bolder; color: #C24F55;font-size: 2em;">Smart Police</h1>
 	            <div class="account-wall">
 	                <div style="text-align: center;">
-	                	<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button> 
+	                	<fb:login-button scope="public_profile,id,name,email,hometown,location" onlogin="checkLoginState();"></fb:login-button> 
 	                            Signup with Facebook
 	                </div>
 	                <div style="font-weight: bold;font-size: 1.5em; text-align: center;">OR</div>
