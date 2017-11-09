@@ -54,6 +54,8 @@
   	function testApi(){
   		FB.api('/me?fields=name,email', function(response){
   			if(response && !response.error){
+  				$(".name").text(response.name);
+  				$(".email").text(response.name);
   				console.log(response);
   			}
   		});
@@ -161,34 +163,22 @@
 			<div class="col-md-6">
 				<h1 class="lead">Welcome to Smart Police </h1>
 				<!-- <button id="stop" class="btn btn-warning">Stop</button> <button id="start" class="btn btn-warning">Start</button> -->
-				<table class="table" style="color:#FFF;">
-					<tbody>
-						<tr>
-							<td>Name</td>
-							<td><span class="name"></span></td>
-						</tr>
-						<tr>
-							<td>Email</td>
-							<td><span class="email"></span></td>
-						</tr>
-						<tr>
-							<td>Location</td>
-							<td><span class="location"></span></td>
-						</tr>
-						<tr>
-							<td>Addesss</td>
-							<td>textarea</td>
-						</tr>
-						<tr>
-							<td>Phone</td>
-							<td>input</td>
-						</tr>
-						<tr>
-							<td>Rescue relative</td>
-							<td>input</td>
-						</tr>
-					</tbody>
-				</table>
+				<div class="row">
+					<div class="col-sm-1">
+						Name 
+					</div>
+					<div class="col-sm-3">
+						<span class="name"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-1">
+						Email 
+					</div>
+					<div class="col-sm-3">
+						<span class="email"></span>
+					</div>
+				</div>
 			</div>
 			<div class="col-md-6">
 				<video id="video" width="640" height="480" autoplay></video>
