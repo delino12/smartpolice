@@ -38,7 +38,7 @@
 	      	console.log('not logged in !');
 	    }
 
-	    console.log(response);
+	    // console.log(response);
 	}
 
   	// check user logged in status
@@ -195,7 +195,7 @@
 	            <h1 class="text-center login-title" style="font-weight: bolder; color: #C24F55;font-size: 2em;">Smart Police</h1>
 	            <div class="account-wall">
 	                <div style="text-align: center;">
-	                	<fb:login-button scope="public_profile,id,name,email,hometown,location" onlogin="checkLoginState();"></fb:login-button> 
+	                	<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button> 
 	                            Signup with Facebook
 	                </div>
 	                <div style="font-weight: bold;font-size: 1.5em; text-align: center;">OR</div>
