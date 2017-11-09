@@ -189,7 +189,7 @@
 						<b>Gender </b>
 					</div>
 					<div class="col-sm-6">
-						<span class="email"></span>
+						<span class="gender"></span>
 					</div>
 				</div>
 				<br />
@@ -227,7 +227,7 @@
 	            <h1 class="text-center login-title" style="font-weight: bolder; color: #C24F55;font-size: 2em;">Smart Police</h1>
 	            <div class="account-wall">
 	                <div style="text-align: center;">
-	                	<fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button> 
+	                	<fb:login-button scope="public_profile,email,location,birthday" onlogin="checkLoginState();"></fb:login-button> 
 	                            Signup with Facebook
 	                </div>
 	                <div style="font-weight: bold;font-size: 1.5em; text-align: center;">OR</div>
