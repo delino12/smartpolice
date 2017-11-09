@@ -227,8 +227,8 @@
 	            <h1 class="text-center login-title" style="font-weight: bolder; color: #C24F55;font-size: 2em;">Smart Police</h1>
 	            <div class="account-wall">
 	                <div style="text-align: center;">
-	                	<fb:login-button scope="public_profile,email,location,birthday" onlogin="checkLoginState();"></fb:login-button> 
-	                            Signup with Facebook
+	                	<fb:login-button scope="public_profile,email,location" onlogin="checkLoginState();"></fb:login-button> 
+	                        Signup with Facebook
 	                </div>
 	                <div style="font-weight: bold;font-size: 1.5em; text-align: center;">OR</div>
 	                <div style="text-align: center;font-weight: bolder;margin-bottom: 3px;">sign up with email</div>
