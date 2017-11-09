@@ -17,7 +17,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <a href="#" id="fb-btn">
-                        <fb:login-button scope="public_profile,email,location" onlogin="checkLoginState();"></fb:login-button> 
+                        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button> 
                         or Signup via Facebook
                     </a>
                 </li>
