@@ -144,7 +144,7 @@
   };
   firebase.initializeApp(config);
 </script>
-<div id="dashboard">
+<div id="dashboard" style="color:#FFF;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
