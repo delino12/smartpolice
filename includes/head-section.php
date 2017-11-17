@@ -10,8 +10,5 @@
 	
   	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
   	<link href="http://cdn.phpoll.com/css/animate.css" rel="stylesheet">
-
-  	<!-- HTTPS required. HTTP will give a 403 forbidden response -->
-  	<script src="https://sdk.accountkit.com/en_US/sdk.js"></script>
 </head>
 <body style="min-height:30em;background: url(smartpolice/images/action.jpg)no-repeat 0px 0px;background-size: cover;    -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover;-ms-background-size: cover;background-attachment:fixed;">
