@@ -30,13 +30,25 @@
 	  	$(".reports").append(`
 	  		<div class="panel panel-primary">
 				<div class="panel-heading">
-					Reporting: `+crimeType+`
+					Incomming Reporting: `+crimeType+`
 				</div>
 				<div class="panel-body">
+					<span class="small">Crime Image</span><br />
 					<img src="`+crimeImage+`" width="200" height="200" class="img-rounded" /><br />
 
 					<p>`+crimeDetails+`</p>
+					<table class="table">
+						<tr>
+							<td>Location</td>
+							<td>`+crimeLocation+`</td>
+						</tr>
+						<tr>
+							<td>Date</td>
+							<td>`+crimeDate+`</td>
+						</tr>
+					</table>
 				</div>
+
 			</div>
 	  	`);
 
@@ -51,7 +63,7 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-6">
 			<div class="reports">
 				
 			</div>
